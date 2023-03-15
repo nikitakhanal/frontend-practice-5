@@ -36,8 +36,10 @@ main{
     margin: 0 auto;
     padding-top: 5.5rem;
     width: 375px;
+    min-width: 375px;
     height: 100vh;
     background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
 }
 
 .hero{
