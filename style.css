@@ -27,7 +27,11 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    height: 100vh;
     color: var(--color-white-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
@@ -146,4 +150,68 @@ main{
     display: flex;
     justify-content: space-between;
     font-weight: var(--fw-bold);
+}
+
+@media (min-width: 1200px){
+
+    main{
+        height: 100vh;
+        max-height: 900px;
+        width: 100vw;
+        max-width: 1440px;
+        margin: 0 auto;
+        background-color: var(--color-black-400);
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero{
+        min-width: 25%;
+        height: unset;
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .text{
+        text-align: left;
+        width: 35%;
+        /* max-height: 120px; */
+        height: unset;
+        position: relative;
+    }
+
+    .pop-up{
+        height: 40%;
+        width: max-content;
+        padding: 1rem;
+        position: absolute;
+        top: -2rem;
+        left: unset;
+        right: 2rem;
+    }
+
+    .pop-up span:last-child{
+        display: inline-block;
+    }
+
+    .pop-up::after{
+        content: "";
+        display: block;
+        border-width: .75rem;
+        border-style: solid;
+        border-right-color: white;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        position: absolute;
+        right: 0;
+        bottom: -.75rem;
+    }
+
+
 }
