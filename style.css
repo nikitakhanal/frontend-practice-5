@@ -35,12 +35,13 @@ body{
 }
 
 main{
-    padding: 1.5rem;
     margin: 5rem auto;
+    padding: 1.5rem;
     padding-top: 7.5rem;
+    padding-bottom: 5rem;
     width: 375px;
     min-width: 375px;
-    height: 100vh;
+    height: max-content;
     background-image: url(./images/bg-mobile.png);
     background-repeat: no-repeat;
 }
@@ -161,6 +162,7 @@ main{
         width: 100vw;
         max-width: 1440px;
         margin: 0 auto;
+        padding-bottom: unset;
         background-color: var(--color-black-400);
         background-image: url(./images/bg-desktop.png);
         background-repeat: no-repeat;
